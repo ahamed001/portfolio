@@ -71,25 +71,25 @@ export const info = {
     portfolio: [
         {
             title: "E-Commerce",
-            // live: "https://paytonpierce.dev", 
+            live: "https://ecommerce-client-drab.vercel.app/", 
             source: "https://github.com/ahamed001/Ecommerce-Client",
             image: mock1
         },
         {
             title: "Video Editor Web App",
-            // live: "https://paytonpierce.dev",
+            live: "https://reels-maker-effe.vercel.app/editor",
             source: "https://github.com/ahamed001/Reels-Maker-EFFE",
             image: mock2
         },
         {
             title: "AR/VR Website",
-            // live: "https://paytonpierce.dev",
+            live: "https://effe-furniture-one.vercel.app/",
             source: "https://github.com/ahamed001/EFFE-Furniture",
             image: mock3
         },
         {
             title: "Job Fair Website",
-            // live: "https://paytonpierce.dev",
+            live: "https://snazzy-phoenix-da8bb3.netlify.app/",
             source: "https://github.com/ahamed001/JobFair-Form",
             image: mock4
         },
