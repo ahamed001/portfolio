@@ -47,7 +47,7 @@ export const info = {
             label: 'twitter'
         }
     ],
-    bio: "Hello! I'm Ahamed Irfan, a full stack developer with 1+ years of experience and a strong background in web development. When I’m not coding, I enjoy long walks on the beach. Let’s connect—I’d love to bring my expertise to your team!",
+    bio: "Hello! I'm Ahamed Irfan, a full stack developer with 1+ years of experience and a strong background in software development. When I’m not coding, I enjoy long walks on the beach. Let’s connect—I’d love to bring my expertise to your team!",
     skills:
     {
         proficientWith: ['javascript', 'react', 'java', 'flutter', 'tailwind', 'springboot', 'nodejs', 'mongodb', 'mysql', 'ci/cd', ],
