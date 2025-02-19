@@ -23,7 +23,7 @@ export const info = {
         },
         {
             emoji: "💼",
-            text: "Full-stack Developer at EFFE"
+            text: "Full-stack Developer at Techzurf"
         },
         {
             emoji: "📧",
@@ -50,14 +50,14 @@ export const info = {
     bio: "Hello! I'm Ahamed Irfan, a full stack developer with 1+ years of experience and a strong background in web development. When I’m not coding, I enjoy long walks on the beach. Let’s connect—I’d love to bring my expertise to your team!",
     skills:
     {
-        proficientWith: ['javascript', 'react', 'java', 'github', 'tailwind', 'html5', 'css3', 'next', 'springboot', 'nodejs', 'mongodb', 'mysql'],
-        exposedTo: ['RESTful APIs', 'ci/cd', 'redux', 'typescript']
+        proficientWith: ['javascript', 'react', 'java', 'flutter', 'tailwind', 'springboot', 'nodejs', 'mongodb', 'mysql', 'ci/cd', ],
+        exposedTo: ['RESTful APIs', 'postgresql',  'redux', 'typescript']
     }
     ,
     hobbies: [
         {
-            label: 'movies',
-            emoji: '🎥'
+            label: 'reading',
+            emoji: '📖'
         },
         {
             label: 'cooking',
