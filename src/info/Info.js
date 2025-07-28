@@ -40,12 +40,12 @@ export const info = {
             link: "https://www.linkedin.com/in/ahamed-irfan",
             icon: "fa fa-linkedin",
             label: 'linkedin'
-        },
-        {
-            link: "https://x.com/AhamedIrfan001",
-            icon: "fa fa-twitter",
-            label: 'twitter'
         }
+        // {
+        //     link: "https://x.com/AhamedIrfan001",
+        //     icon: "fa fa-twitter",
+        //     label: 'twitter'
+        // }
     ],
     bio: "Hello! I'm Ahamed Irfan, a full stack developer with 2+ years of experience and a strong background in software development. When I’m not coding, I enjoy long walks on the beach. Let’s connect—I’d love to bring my expertise to your team!",
     skills:
