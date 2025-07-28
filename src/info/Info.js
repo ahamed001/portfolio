@@ -24,11 +24,11 @@ export const info = {
         {
             emoji: "💼",
             text: "Full-stack Developer at Techzurf"
-        },
-        {
-            emoji: "📧",
-            text: "ahamed.irfan001@gmail.com"
         }
+        // {
+        //     emoji: "📧",
+        //     text: "ahamed.irfan001@gmail.com"
+        // }
     ],
     socials: [
         {
@@ -40,6 +40,11 @@ export const info = {
             link: "https://www.linkedin.com/in/ahamed-irfan",
             icon: "fa fa-linkedin",
             label: 'linkedin'
+        },
+        {
+            link: "mailto:ahamed.irfan001@gmail.com",
+            icon: "fa fa-envelope",
+            label: 'email'
         }
         // {
         //     link: "https://x.com/AhamedIrfan001",
