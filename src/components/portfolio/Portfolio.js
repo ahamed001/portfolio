@@ -1,18 +1,37 @@
-import React from 'react';
-import PortfolioBlock from "./PortfolioBlock";
-import { Box, Grid } from "@mui/material";
+import { Box } from "@mui/material";
 import { info } from "../../info/Info";
+import BrowserWindow from "./BrowserWindow";
+
+function groupByCompanyRole(projects) {
+  const grouped = {};
+
+  projects.forEach(proj => {
+    const key = `${proj.company} — ${proj.role}`;
+    if (!grouped[key]) grouped[key] = [];
+    grouped[key].push(proj);
+  });
+
+  return grouped;
+}
 
 export default function Portfolio({ innerRef }) {
-    return (
-        <Box id={'portfolio'} ref={innerRef}>
-            <Grid container display={'flex'} justifyContent={'center'}>
-                {info.portfolio.map((project, index) => (
-                    <Grid item xs={12} md={6} key={index}>
-                        <PortfolioBlock image={project.image} live={project.live} source={project.source} title={project.title} />
-                    </Grid>
-                ))}
-            </Grid>
-        </Box>
-    );
-};
+  const allProjects = [
+    ...info.portfolio.professional.fulltime,
+    ...info.portfolio.professional.internship,
+    ...info.portfolio.professional.personal
+  ];
+
+  const groupedProjects = groupByCompanyRole(allProjects);
+
+  return (
+    <Box id="portfolio" ref={innerRef} px={2}>
+      {Object.entries(groupedProjects).map(([companyRole, projects], index) => (
+        <BrowserWindow
+          key={index}
+          title={companyRole}
+          projects={projects}
+        />
+      ))}
+    </Box>
+  );
+}

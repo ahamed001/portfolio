@@ -11,12 +11,28 @@
 .skills {
   columns: 1;
 
-  @media only screen and (min-width: 940px) {
+  @media only screen and (min-width: 600px) {
     columns: 2;
   }
 
+  @media only screen and (min-width: 940px) {
+    columns: 3;
+  }
+  p,
   li {
-    margin: 0;
-    line-height: 1.75;
+    font-size: 0.95rem;
+    line-height: 1.6;
+
+    @media (max-width: 600px) {
+      font-size: 0.85rem;
+    }
+  }
+
+  .skills li {
+    font-size: 0.9rem;
+
+    @media (max-width: 600px) {
+      font-size: 0.8rem;
+    }
   }
 }

@@ -1,10 +1,14 @@
-import React from 'react';
-
-function SocialIcon(props) {
-    const { link, icon, label } = props;
+function SocialIcon({ link, icon, label, hoverColor }) {
     return (
-        <a target="_blank" aria-label={label}
-            rel="noopener noreferrer" href={link}>
+        <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={label}
+            style={{ transition: "color 0.3s ease" }}
+            onMouseEnter={(e) => e.currentTarget.style.color = hoverColor}
+            onMouseLeave={(e) => e.currentTarget.style.color = "inherit"}
+        >
             <i className={icon} aria-hidden="true" />
         </a>
     );
