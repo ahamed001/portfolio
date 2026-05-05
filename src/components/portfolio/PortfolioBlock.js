@@ -14,7 +14,7 @@ export default function PortfolioBlock({ project }) {
     platforms,
   } = project;
 
-  const showLive = status === "live" && live;
+  // const showLive = status === "live" && Array.isArray(live) && live.length > 0;
   const showSource = source;
 
   const statusLabel = (() => {
@@ -35,7 +35,7 @@ export default function PortfolioBlock({ project }) {
   })();
 
   const fallbackText = (() => {
-    if (project.tech?.some(t => t.toLowerCase().includes("ar"))) {
+    if (project.tech?.some((t) => t.toLowerCase().includes("ar"))) {
       return "Live Camera-Based AR System — Visuals Not Representative";
     }
     switch (status) {
@@ -59,7 +59,7 @@ export default function PortfolioBlock({ project }) {
         height: "100%",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "space-between",
+        justifyContent: "flex-start",
         backgroundColor: theme.palette.background.paper,
         color: theme.palette.text.primary,
         boxShadow:
@@ -146,7 +146,11 @@ export default function PortfolioBlock({ project }) {
           <Typography
             variant="body2"
             textAlign="center"
-            sx={{ mt: 1, px: 1, fontSize: { xs: "0.8rem", sm: "0.85rem", md: "0.9rem" } }}
+            sx={{
+              mt: 1,
+              px: 1,
+              fontSize: { xs: "0.8rem", sm: "0.85rem", md: "0.9rem" },
+            }}
           >
             {description}
           </Typography>
@@ -154,7 +158,13 @@ export default function PortfolioBlock({ project }) {
 
         {/* Tech Stack */}
         {tech && (
-          <Box display="flex" flexWrap="wrap" justifyContent="center" gap={0.5} mt={1}>
+          <Box
+            display="flex"
+            flexWrap="wrap"
+            justifyContent="center"
+            gap={0.5}
+            mt={1}
+          >
             {tech.map((t, i) => (
               <Chip
                 key={i}
@@ -199,12 +209,36 @@ export default function PortfolioBlock({ project }) {
       </Stack>
 
       {/* Action Buttons */}
-      <Box display="flex" gap={2} mt={2} flexWrap="wrap" justifyContent="center">
-        {showLive && (
-          <ActionButton>
-            <IconLink link={live} title="Live Demo" icon="fa fa-safari" />
-          </ActionButton>
-        )}
+      <Box
+        display="flex"
+        gap={2}
+        mt={2}
+        flexWrap="wrap"
+        justifyContent="center"
+      >
+        {status === "live" &&
+          (Array.isArray(live) ? (
+            live.map((demo, i) => (
+              <ActionButton key={i}>
+                <IconLink
+                  link={demo.url}
+                  title={demo.label}
+                  icon={
+                    demo.label.toLowerCase().includes("android")
+                      ? "fa fa-android"
+                      : demo.label.toLowerCase().includes("ios")
+                      ? "fa fa-apple"
+                      : "fa fa-globe"
+                  }
+                />
+              </ActionButton>
+            ))
+          ) : (
+            <ActionButton>
+              <IconLink link={live} title="Live Demo" icon="fa fa-safari" />
+            </ActionButton>
+          ))}
+
         {showSource && (
           <ActionButton>
             <IconLink link={source} title="Source Code" icon="fa fa-code" />
@@ -224,10 +258,14 @@ function ActionButton({ children }) {
         minWidth: 110,
         borderRadius: "999px",
         border: `1.5px solid ${
-          theme.palette.mode === "dark" ? theme.palette.grey[400] : theme.palette.grey[800]
+          theme.palette.mode === "dark"
+            ? theme.palette.grey[400]
+            : theme.palette.grey[800]
         }`,
         color:
-          theme.palette.mode === "dark" ? theme.palette.grey[200] : theme.palette.grey[900],
+          theme.palette.mode === "dark"
+            ? theme.palette.grey[200]
+            : theme.palette.grey[900],
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -243,8 +281,13 @@ function ActionButton({ children }) {
 
         "&:hover": {
           backgroundColor:
-            theme.palette.mode === "dark" ? theme.palette.grey[200] : theme.palette.grey[900],
-          color: theme.palette.mode === "dark" ? theme.palette.grey[900] : theme.palette.grey[100],
+            theme.palette.mode === "dark"
+              ? theme.palette.grey[200]
+              : theme.palette.grey[900],
+          color:
+            theme.palette.mode === "dark"
+              ? theme.palette.grey[900]
+              : theme.palette.grey[100],
         },
       })}
     >

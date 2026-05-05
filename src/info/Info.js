@@ -1,4 +1,5 @@
 import self from "../img/self.png"
+import pos from "../img/pos.png"
 import ecommerce from "../img/ecommerce.png"
 import restaurant from "../img/restaurant.png"
 import jobFair from "../img/jobFair.png"
@@ -64,8 +65,8 @@ export const info = {
             emoji: '📖'
         },
         {
-            label: 'cooking',
-            emoji: '🌶'
+            label: "long walks",
+            emoji: "🚶‍♂️"
         },
         {
             label: 'badminton',
@@ -144,10 +145,15 @@ export const info = {
                     type: "professional",
                     access: "partial",
                     status: "live",
-                    live: "https://myumrahtrips.com",
-                    tech: ["React", "NodeJs", "Flutter", "Redux", "Provider"],
+                    live: [
+                        { label: "Web", url: "https://myumrahtrips.com" },
+                        { label: "iOS App", url: "https://apps.apple.com/in/app/my-umrah-trips/id6759250997" },
+                        { label: "Android App", url: "https://play.google.com/store/apps/details?id=com.techzurf.myumrahtripsapp" }
+                    ],
+                    platforms: ["Android", "iOS", "Web"],
+                    tech: ["React", "NodeJs", "Flutter", "MongoDB", "Redux", "Provider"],
                     image: umrahTrips,
-                    description: "Large-scale travel booking platform with multi-role architecture across web and mobile. Includes separate experiences for users, agents, admins, super admins, and marketing teams. Built and maintained two web applications and one Android application, with shared and role-specific features across platforms."
+                    description: "Large-scale travel booking platform across web and mobile (Android & iOS) with role-based systems for users, agents, admins, and marketing teams. Built and maintained scalable applications with shared APIs and role-specific workflows."
                 },
                 {
                     title: "Connect Masjid Mobile Application",
@@ -156,7 +162,9 @@ export const info = {
                     type: "professional",
                     access: "public",
                     status: "live",
-                    live: "https://play.google.com/store/apps/details?id=com.techzurf.demomasjid&hl=en_IN",
+                    live: [
+                        { label: "Android App", url: "https://play.google.com/store/apps/details?id=com.techzurf.demomasjid&hl=en_IN" }
+                    ],
                     platforms: ["Android"],
                     tech: ["Flutter", "NodeJs", "Provider", "MongoDB"],
                     image: connectMasjid,
@@ -169,8 +177,9 @@ export const info = {
                     type: "professional",
                     access: "restricted",
                     status: "internal",
+                    platforms: ["Web"],
                     tech: ["React", "NodeJs", "Redux"],
-                    // image: pos,
+                    image: pos,
                     description: "Role-based POS billing system supporting staff, inventory managers, admins, and super admins."
                 },
                 {
