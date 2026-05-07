@@ -189,10 +189,22 @@ export const info = {
                     type: "professional",
                     access: "restricted",
                     status: "unhosted",
-                    tech: ["React", "NodeJs", "Redux", "MongoDB"],
+                    platforms: ["Web"],
+                    tech: ["React", "NodeJs", "MongoDB"],
                     image: thijarath,
                     description: "Multi-tenant e-commerce SaaS platform that enables creation and management of multiple online stores. Supports role-based access for users, admins, and super admins with centralized product, order, and tenant management."
                 },
+                {
+                    title: "Accounts & Financial Management System",
+                    company: "Techzurf",
+                    role: "Full Stack Developer",
+                    type: "professional",
+                    access: "restricted",
+                    status: "internal",
+                    platforms: ["Web"],
+                    tech: ["React", "NodeJs", "MongoDB"],
+                    description: "Built a role-based accounts management system for tracking financial data, transactions, and reports with secure access control and scalable backend APIs."
+                    },
                 {
                     title: "AR Furniture Website",
                     company: "EFFE Technology",
