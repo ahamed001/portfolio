@@ -61,12 +61,12 @@ export const info = {
     },
     hobbies: [
         {
-            label: 'reading',
-            emoji: '📖'
-        },
-        {
             label: "long walks",
             emoji: "🚶‍♂️"
+        },
+        {
+            label: 'exploring places',
+            emoji: '📍'
         },
         {
             label: 'badminton',
