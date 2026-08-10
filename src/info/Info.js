@@ -151,7 +151,7 @@ export const info = {
                         { label: "Android App", url: "https://play.google.com/store/apps/details?id=com.techzurf.myumrahtripsapp" }
                     ],
                     platforms: ["Android", "iOS", "Web"],
-                    tech: ["React", "NodeJs", "Flutter", "MongoDB", "Redux", "Provider"],
+                    tech: ["React", "NodeJs", "Flutter", "MongoDB", "Redux", "Provider", "Cloudinary"],
                     image: umrahTrips,
                     description: "Large-scale travel booking platform across web and mobile (Android & iOS) with role-based systems for users, agents, admins, and marketing teams. Built and maintained scalable applications with shared APIs and role-specific workflows."
                 },
@@ -171,16 +171,16 @@ export const info = {
                     description: "Android application connecting users with nearby masjids. Includes role-based access for admin and users, prayer updates, and mosque management features."
                 },
                 {
-                    title: "POS Billing & Inventory Management System",
+                    title: "Business Management Suite",
                     company: "Techzurf",
                     role: "Full Stack Developer",
                     type: "professional",
                     access: "restricted",
                     status: "internal",
                     platforms: ["Web"],
-                    tech: ["React", "NodeJs", "Redux"],
+                    tech: ["React", "NodeJs", "Redux", "Express", "Cloudinary"],
                     image: pos,
-                    description: "Role-based POS billing system supporting staff, inventory managers, admins, and super admins."
+                    description: "A complete POS and inventory management system with billing, stock management, purchases, expenses, tax summaries, vendor management, stock transfers, and role-based access control."
                 },
                 {
                     title: "Thijarath – Multi-Tenant E-Commerce SaaS Platform",
