@@ -30,7 +30,7 @@ export const info = {
         },
         {
             emoji: "💼",
-            text: "Full-stack Developer at Techzurf"
+            text: "Full-stack Developer at Sabeel Technologies"
         }
     ],
     socials: [
@@ -53,37 +53,40 @@ export const info = {
             hoverColor: "#D44638"
         }
     ],
-    bio: `Hello! I'm Ahamed Irfan, a full stack developer with ${getExperienceText()}+ years of experience, specializing in building responsive frontends, scalable APIs, and production-ready systems.\nWhen I’m not coding, I enjoy long walks on the beach. Let’s connect—I’d love to bring my expertise to your team!`,
+    bio: `Hello! I'm Ahamed Irfan, a full stack developer with ${getExperienceText()}+ years of experience building web and mobile applications using React, Node.js, Express, and Flutter.
+    I enjoy building business applications, scalable APIs, multi-tenant platforms, and real-time systems. I've worked on products ranging from POS and inventory management systems to travel platforms and e-commerce applications.
+    I'm always exploring new technologies and looking forward to solving challenging engineering problems.`,
     skills:
     {
-        proficientWith: ['javascript', 'react', 'REST APIs', 'flutter', 'redux', 'tailwind', 'nodejs', 'mongodb', 'mysql', 'ci/cd', 'Git', 'Deployment', 'Server handling (PM2, Nginx)'],
-        exposedTo: ['nextjs', 'postgresql', 'typescript', 'AR/VR frameworks', 'JWT authentication', 'Payment gateway integration', 'Cloud services (Firebase, AWS basics)']
+        proficientWith: ['javascript', 'react.js', 'redux', 'node.js', 'express.js', 'REST APIs', 'JWT authentication', 'flutter', 'tailwind', 'socket.IO', 'ci/cd', 'Git', 'Deployment', 'Server handling (PM2, Nginx)'],
+        exposedTo: ['nextjs', 'postgresql', 'typescript', 'AR/VR frameworks', 'Payment gateway integration', 'Cloud services (Firebase, AWS basics)']
     },
     hobbies: [
         {
-            label: "long walks",
-            emoji: "🚶‍♂️"
+            label: "running",
+            emoji: "🏃‍♂️"
+        },
+        {
+            label: 'reading',
+            emoji: '📚'
         },
         {
             label: 'exploring places',
             emoji: '📍'
         },
-        {
-            label: 'badminton',
-            emoji: '🏸'
-        },
     ],
     experience: [
         {
-            company: "Techzurf",
+            company: "Sabeel Technologies",
             role: "Full Stack Developer",
             start: "2024 Dec",
             end: "present",
             location: "Chennai, India",
             workMode: "Hybrid",
             description: [
-            "Contributed to production-grade web and mobile platforms with multi-role architecture.",
-            "Built and maintained role-based systems for admins, users, and vendors across platforms."
+                "Developed web and mobile applications with role-based functionality for users, agents, admins, and super admins.",
+                "Built POS and inventory management workflows covering billing, stock transfers, adjustments, expenses, and vendor management.",
+                "Worked with a product catalogue of 20,000+ items and integrated Socket.IO for real-time data updates."
             ]
         },
         {
@@ -94,13 +97,13 @@ export const info = {
             location: "Chennai, India",
             workMode: "On-site",
             description: [
-            "Worked on AR-based web applications, LMS platforms, and internal tools.",
-            "Contributed during final development phases, focusing on UI stability, bug fixes, and performance optimization."
+                "Developed AR-enabled web applications for virtual try-on and 3D visualization using WebAR and real-time tracking libraries.",
+                "Contributed to LMS and internal platforms using React and Spring Boot, focusing on API integration, UI stability, bug fixes, and performance."
             ]
         },
         {
             company: "Why Global Services",
-            role: "Full Stack Developer Intern",
+            role: "MERN Stack Developer Intern",
             start: "2023 May",
             end: "2023 Nov",
             location: "Chennai, India",
@@ -139,8 +142,20 @@ export const info = {
 
             fulltime: [
                 {
+                    title: "Business Management Suite",
+                    company: "Sabeel Technologies",
+                    role: "Full Stack Developer",
+                    type: "professional",
+                    access: "restricted",
+                    status: "internal",
+                    platforms: ["Web"],
+                    tech: ["React", "NodeJs", "Express", "Redux", "Socket.IO", "MongoDB"],
+                    image: pos,
+                    description: "Developed a business management and POS platform covering billing, inventory, purchases, stock transfers, stock adjustments, expense tracking, tax summaries, and vendor management. Worked with a product catalogue of 20,000+ items and integrated real-time updates using Socket.IO."
+                },
+                {
                     title: "My Umrah Trips Platform",
-                    company: "Techzurf",
+                    company: "Sabeel Technologies",
                     role: "Full Stack Developer",
                     type: "professional",
                     access: "partial",
@@ -153,11 +168,23 @@ export const info = {
                     platforms: ["Android", "iOS", "Web"],
                     tech: ["React", "NodeJs", "Flutter", "MongoDB", "Redux", "Provider", "Cloudinary"],
                     image: umrahTrips,
-                    description: "Large-scale travel booking platform across web and mobile (Android & iOS) with role-based systems for users, agents, admins, and marketing teams. Built and maintained scalable applications with shared APIs and role-specific workflows."
+                    description: "Multi-platform travel booking system spanning two web applications and Android and iOS apps. Supports users, agents, admins, and marketing teams through role-based access, shared APIs, and integrated travel workflows."
+                },
+                {
+                    title: "Thijarath – Multi-Tenant E-Commerce SaaS Platform",
+                    company: "Sabeel Technologies",
+                    role: "Full Stack Developer",
+                    type: "professional",
+                    access: "restricted",
+                    status: "unhosted",
+                    platforms: ["Web"],
+                    tech: ["React", "NodeJs", "MongoDB"],
+                    image: thijarath,
+                    description: "Multi-tenant e-commerce SaaS platform that enables multiple online stores to operate through a centralized system. Includes role-based access and management of tenants, products, and orders across stores."
                 },
                 {
                     title: "Connect Masjid Mobile Application",
-                    company: "Techzurf",
+                    company: "Sabeel Technologies",
                     role: "Full Stack Developer",
                     type: "professional",
                     access: "public",
@@ -168,53 +195,28 @@ export const info = {
                     platforms: ["Android"],
                     tech: ["Flutter", "NodeJs", "Provider", "MongoDB"],
                     image: connectMasjid,
-                    description: "Android application connecting users with nearby masjids. Includes role-based access for admin and users, prayer updates, and mosque management features."
-                },
-                {
-                    title: "Business Management Suite",
-                    company: "Techzurf",
-                    role: "Full Stack Developer",
-                    type: "professional",
-                    access: "restricted",
-                    status: "internal",
-                    platforms: ["Web"],
-                    tech: ["React", "NodeJs", "Redux", "Express", "Cloudinary"],
-                    image: pos,
-                    description: "A complete POS and inventory management system with billing, stock management, purchases, expenses, tax summaries, vendor management, stock transfers, and role-based access control."
-                },
-                {
-                    title: "Thijarath – Multi-Tenant E-Commerce SaaS Platform",
-                    company: "Techzurf",
-                    role: "Full Stack Developer",
-                    type: "professional",
-                    access: "restricted",
-                    status: "unhosted",
-                    platforms: ["Web"],
-                    tech: ["React", "NodeJs", "MongoDB"],
-                    image: thijarath,
-                    description: "Multi-tenant e-commerce SaaS platform that enables creation and management of multiple online stores. Supports role-based access for users, admins, and super admins with centralized product, order, and tenant management."
+                    description: "Community-focused Android application connecting users with nearby masjids. Includes prayer time updates, mosque information, and role-based features for users and mosque administrators."
                 },
                 {
                     title: "Accounts & Financial Management System",
-                    company: "Techzurf",
+                    company: "Sabeel Technologies",
                     role: "Full Stack Developer",
                     type: "professional",
                     access: "restricted",
                     status: "internal",
                     platforms: ["Web"],
                     tech: ["React", "NodeJs", "MongoDB"],
-                    description: "Built a role-based accounts management system for tracking financial data, transactions, and reports with secure access control and scalable backend APIs."
-                    },
+                    description: "Role-based financial management application for tracking transactions, financial records, and reports, with controlled access and backend API integration."
+                },
                 {
-                    title: "AR Furniture Website",
+                    title: "AR Virtual Try-On Engine",
                     company: "EFFE Technology",
                     role: "Full Stack Developer",
                     type: "professional",
-                    access: "public",
+                    access: "restricted",
                     status: "internal",
-                    tech: ["JavaScript", "Google Model Viewer"],
-                    image: arFurniture,
-                    description:"Interactive AR furniture website allowing users to visualize furniture in real-world environments using Google Model Viewer and WebAR techniques."
+                    tech: ["TensorFlowJs", "WebAR", "MindAR", "DeepAR", "Banuba", "Face Detection", "Hand Tracking"],
+                    description: "Worked on AR-based virtual try-on experiences using face and hand tracking technologies. Contributed to real-time detection and tracking features for interactive browser-based experiences."
                 },
                 {
                     title: "Mentop LMS",
@@ -225,7 +227,7 @@ export const info = {
                     status: "internal",
                     tech: ["React", "Spring Boot"],
                     image: mentop,
-                    description: "Learning management system with role-based access, course management, and backend APIs. Contributed as a junior full-stack developer during the final development phase, focusing on UI refinements, bug fixes, and performance optimizations to improve rendering efficiency."
+                    description: "Learning management platform with role-based access, course management, and backend APIs. Contributed to frontend refinements, API integration, bug fixes, and rendering performance improvements during the final development phase."
                 },
                 {
                     title: "DSimilar E-Commerce Platform",
@@ -236,17 +238,18 @@ export const info = {
                     status: "internal",
                     tech: ["NodeJs", "Redux", "NextJs"],
                     image: dsimilar,
-                    description: "E-commerce backend APIs with Redux-based frontend state management."
+                    description: "Contributed to an e-commerce platform involving backend API development and frontend state management using Redux and Next.js."
                 },
                 {
-                    title: "AR Virtual Try-On Engine",
+                    title: "AR Furniture Website",
                     company: "EFFE Technology",
                     role: "Full Stack Developer",
                     type: "professional",
-                    access: "restricted",
+                    access: "public",
                     status: "internal",
-                    tech: ["TensorFlowJs", "WebAR", "MindAR", "DeepAR", "Banuba", "Face Detection", "Hand Tracking"],
-                    description:"Built hand and face detection modules for AR-based virtual try-on systems. Focused on real-time tracking and performance optimization."
+                    tech: ["JavaScript", "Google Model Viewer"],
+                    image: arFurniture,
+                    description: "Interactive furniture visualization website that allows users to view 3D furniture models in real-world environments using Google Model Viewer and WebAR."
                 },
                 {
                     title: "Web-Based Video Editor",
@@ -256,8 +259,7 @@ export const info = {
                     access: "restricted",
                     status: "discontinued",
                     tech: ["React", "Video SDKs"],
-                    // image: reelsMaker,
-                    description: "Video editor product prototype. Hosting discontinued due to company funding issues."
+                    description: "Contributed to a browser-based video editor prototype using React and video SDKs. The project was discontinued and is no longer hosted."
                 }
             ],
 
