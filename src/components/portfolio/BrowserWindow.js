@@ -60,7 +60,7 @@ export default function BrowserWindow({ title, projects = [], children }) {
         {hasProjects ? (
           <Grid container spacing={3}>
             {projects.map((project, index) => (
-              <Grid item xs={12} sm={6} md={4} key={index}>
+              <Grid item xs={12} sm={6} key={index}>
                 <PortfolioBlock project={project} />
               </Grid>
             ))}
